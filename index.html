@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="light" name="color-scheme"/><meta content="Tina｜AI 實務應用、企業內訓支援、AI 專業認證及 Google AI Professional Certificate" name="description"/><title>Tina｜AI 應用與企業內訓支援</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Iansui&amp;family=Noto+Sans+TC:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>/* Tina's concise resume — design revision 2026-10-29 */
+:root{--bg:#eaf4fb;--paper:#fff;--ink:#171c22;--muted:#465565;--line:#c4d7e6;--blue:#235e8d;--font-body:'Noto Sans TC',system-ui,'Microsoft JhengHei',sans-serif;--font-title:'Iansui','Noto Sans TC',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 14px/1.72 var(--font-body)}
+a{color:var(--blue)}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:2px solid #1a6294;outline-offset:3px}
+.container{width:min(960px,calc(100% - 44px));margin:auto}
+.identity{padding:24px 0 12px;border-bottom:1px solid var(--line)}.identity-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px}.identity-name{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}.identity-name h1{font:400 28px/1.15 var(--font-title);margin:0;color:#172737}.identity-name span{font-size:14px;font-weight:700;color:#294c68}.identity-role{font-size:12px;color:#536879;font-weight:650}.identity-tagline{font:400 16.5px/1.5 var(--font-title);color:#264e70;margin:10px 0 0}
+.section{padding:16px 0 0}.section-heading{margin:0 0 9px;display:flex;align-items:center;gap:12px;min-height:27px}.section-heading h2{font:400 19px/1.4 var(--font-title);margin:0;color:#162d40;white-space:normal}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:7px}.intro-panel{padding:17px 21px}.intro-panel p{font-size:13.75px;line-height:1.8;margin:0 0 10px;color:var(--ink)}.intro-panel p:last-child{margin:0}
+.work-grid{display:grid;grid-template-columns:minmax(0,1.57fr) minmax(0,.9fr);gap:13px;align-items:stretch}.work-column,.tools-column{min-width:0;display:flex;flex-direction:column}.work-panel,.tool-panel{flex:1}.work-panel{padding:18px 20px}.experience-card{display:block;margin:0 0 18px}.experience-card:last-child{margin-bottom:0}.experience-card h3{font-size:14px;line-height:1.55;margin:0 0 4px;font-weight:750;color:#254d6c}.experience-card p{font-size:13.5px;line-height:1.78;color:var(--ink);margin:0}.tool-panel{padding:15px 19px;background:#f8fbff}.group-title{display:flex;align-items:center;gap:7px;margin:0 0 7px;font-size:12.5px;font-weight:750;color:#25577c}.group-title:before{content:'';width:5px;height:5px;border-radius:50%;background:#357ea7}.tool-row{display:flex;flex-direction:column;gap:0;margin-bottom:10px}.tool-row strong{font-size:13.2px;font-weight:800;line-height:1.55;color:#1e2b37}.tool-row span{font-size:12.6px;color:#475767;line-height:1.6}.tool-row.tight{display:grid;grid-template-columns:92px 1fr;gap:3px;margin-bottom:5px}.tool-panel hr{border:0;border-top:1px solid #d4e3ed;margin:13px 0 11px}
+/* Credentials: existing three-row text on the left, a compact image gallery on the right */
+.licenses{overflow:hidden}.credentials-board{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.92fr);align-items:stretch;min-height:224px}.license-text-list{display:flex;flex-direction:column;min-width:0}.license-text-list .license{position:relative;display:grid;grid-template-columns:116px minmax(0,1fr);gap:12px;align-items:center;flex:1;min-width:0;padding:10px 16px;border:0}.license-text-list .license:not(:last-child):after{content:'';position:absolute;bottom:0;left:19px;right:26px;height:1px;background:#dce8f0}.license-date{font-size:12.5px;font-weight:600;color:#526170}.license-info{min-width:0}.license-info h3{font-size:13.5px;font-weight:750;margin:0;line-height:1.45}.license-info p{margin:1px 0 0;font-size:12px;line-height:1.45;color:#586879}.mobile-ipas-break{display:none}
+.license-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;justify-items:center;gap:18px;min-width:0;padding:12px 19px 12px 6px}
+/* A subtle edge-hugging precision frame rather than a padded card. */
+.certificate-thumb{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;padding:2px;border:1px solid #879aaa;border-radius:2px;background:#fff;box-shadow:inset 0 0 0 1px #f7fbff,0 0 0 2px #eaf1f6,0 3px 7px rgba(30,55,78,.13);cursor:zoom-in;vertical-align:middle;transition:box-shadow .16s,transform .16s}.certificate-thumb:hover{box-shadow:inset 0 0 0 1px white,0 0 0 2px #acc9db,0 5px 10px rgba(30,55,78,.2)}.certificate-thumb img{display:block;object-fit:contain;max-width:100%;width:auto;height:154px}.mobile-certificate-thumb{display:none}
+/* Google main badge has no backing box or frame. */
+.google-card{display:grid;grid-template-columns:128px minmax(0,1fr) 202px;gap:15px;align-items:center;padding:15px 18px}.main-badge-button{display:flex;align-items:center;justify-content:center;background:transparent;padding:0;border:0;cursor:pointer;text-decoration:none;max-width:100%;width:100%}.main-badge-button img{display:block;width:128px;max-width:100%;height:auto;object-fit:contain;transition:transform .18s}.main-badge-button:hover img{transform:scale(1.03)}.eyebrow{font-size:10px;font-weight:750;color:#496c86;letter-spacing:.06em}.google-copy{min-width:0}.google-copy h3{font-size:15px;line-height:1.35;margin:2px 0 4px;font-weight:800}.google-copy .courses-intro{font-size:12.5px;color:#354657;margin:5px 0 2px;line-height:1.6}.course-name-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 14px;padding:0 0 0 18px;margin:3px 0 0;list-style:disc outside}.course-name-list li{font-size:11.4px;line-height:1.48;color:#2f4051;overflow-wrap:normal}.course-name-list li::marker{font-size:.75em}.google-copy .google-instruction{margin:9px 0 0;font-size:11.3px;color:#60717f;line-height:1.5}.desktop-series-cert{justify-self:end}.desktop-series-cert img{width:192px;height:auto;max-height:165px}.mobile-course-rail{display:none}
+/* Eight badges always visible. No separate text, numbering, or badge backgrounds. */
+.course-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;margin:6px 0 0;align-items:center}.badge-button{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;min-width:0}.badge-button img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;display:block;transition:transform .18s}.badge-button:hover img{transform:translateY(-2px)}
+/* Image lightbox preserved from original. */
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(6,17,28,.78)}.modal.active{display:flex}.modal-inner{background:#f8fbfe;width:min(940px,100%);max-height:95vh;display:flex;flex-direction:column;border-radius:9px;padding:12px;box-shadow:0 12px 40px #0003}.modal-header{display:flex;align-items:center;justify-content:space-between;padding:3px 5px 10px;gap:12px}.modal-title{font-size:14px;font-weight:750}.modal-close{border:1px solid #c2d8e8;background:white;border-radius:6px;padding:3px 11px;cursor:pointer;font-size:20px}.modal-content{min-height:100px;overflow:auto;text-align:center;background:#e4eef7;border-radius:5px;padding:7px}.modal-content img{display:block;margin:0 auto;max-width:100%;height:auto}.modal-footer{padding:10px 5px 3px;display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap}.modal-footer a{font-size:12px;font-weight:700;color:#145b85}.modal-hint{font-size:11px;color:#587084}
+@media(max-width:850px){.container{width:calc(100% - 34px)}.google-card{grid-template-columns:106px minmax(0,1fr) 154px;gap:9px;padding:12px}.main-badge-button img{width:104px}.desktop-series-cert img{width:145px}.course-name-list{gap:2px 11px}.course-name-list li{font-size:10.8px}.license-gallery{gap:10px;padding-right:12px}.license-gallery .certificate-thumb img{height:135px}.credentials-board{grid-template-columns:minmax(0,1fr) minmax(0,.88fr)}.license-text-list .license{grid-template-columns:90px minmax(0,1fr);gap:8px;padding-left:12px;padding-right:10px}}
+@media(max-width:740px){.work-grid{grid-template-columns:1fr}.work-panel,.tool-panel{flex:auto}.google-card{grid-template-columns:95px minmax(0,1fr) 120px}.desktop-series-cert img{width:115px}.course-name-list{grid-template-columns:1fr}.google-copy h3{font-size:14px}}
+@media(max-width:660px){
+ .credentials-board{display:block;min-height:0}.license-gallery{display:none}.license-text-list .license{display:grid;grid-template-columns:82px minmax(0,1fr) 77px;gap:8px;padding:10px 12px;min-height:104px}.license-text-list .license:not(:last-child):after{left:15px;right:15px}.mobile-ipas-break{display:initial}.license-date{font-size:11.5px}.license-info h3{font-size:12.7px}.license-info p{font-size:11.4px}.mobile-certificate-thumb{display:flex;width:max-content;max-width:77px;justify-self:end}.mobile-certificate-thumb img{width:auto;max-width:100%;height:87px}
+ .google-card{grid-template-columns:96px minmax(0,1fr);align-items:start;gap:10px;padding:12px}.main-badge-button{align-self:start;margin-top:15px}.main-badge-button img{width:94px}.google-copy h3{font-size:13.4px}.course-name-list{grid-template-columns:1fr;gap:1px;padding-left:15px}.course-name-list li{font-size:11.5px;line-height:1.5}.google-copy .courses-intro{font-size:12px}.google-copy .google-instruction{font-size:11px;margin-top:7px}.desktop-series-cert{display:none}
+ .course-grid{display:none}
+ .mobile-course-rail{display:flex;align-items:center;gap:9px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;scroll-padding-left:2px;padding:8px 3px 12px;margin-top:5px;scrollbar-width:thin;scrollbar-color:#acc9db transparent}
+ .mobile-course-rail > .badge-button,.mobile-course-rail > .mobile-series-cert{flex:0 0 clamp(96px,28vw,121px);width:clamp(96px,28vw,121px);scroll-snap-align:start}.mobile-course-rail > .badge-button img{width:100%;aspect-ratio:1}.mobile-course-rail > .mobile-series-cert{height:auto;align-self:center}.mobile-course-rail > .mobile-series-cert img{width:100%;height:auto;object-fit:contain}
+}
+@media(max-width:490px){body{font-size:13.5px}.container{width:calc(100% - 26px)}.identity{padding:19px 0 9px}.identity-row{align-items:flex-start;flex-direction:column;gap:3px}.identity-name h1{font-size:26px}.identity-tagline{font-size:15px;margin-top:8px}.section{padding:13px 0 0}.section-heading h2{font-size:17.5px}.intro-panel,.work-panel,.tool-panel{padding:13px 14px}.intro-panel p{font-size:13px;line-height:1.75;margin-bottom:8px}.experience-card p{font-size:13px}.license-text-list .license{grid-template-columns:70px minmax(0,1fr) 69px;gap:6px;padding:8px;min-height:102px}.license-date{font-size:10.8px}.license-info h3{font-size:12px;line-height:1.42}.license-info p{font-size:11.2px}.mobile-certificate-thumb{max-width:69px}.mobile-certificate-thumb img{height:83px}.google-card{grid-template-columns:91px minmax(0,1fr)}.main-badge-button img{width:88px}}
+@media(max-width:360px){.license-text-list .license{grid-template-columns:61px minmax(0,1fr) 59px;gap:5px}.mobile-certificate-thumb{max-width:59px}.mobile-certificate-thumb img{height:76px}.google-card{grid-template-columns:75px minmax(0,1fr);gap:7px}.main-badge-button img{width:74px}.google-copy h3{font-size:12.5px}.course-name-list li{font-size:11px}.mobile-course-rail > .badge-button,.mobile-course-rail > .mobile-series-cert{flex-basis:30%;width:30%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.certificate-thumb,.badge-button img,.main-badge-button img{transition:none}}
+
+/* 2026-10-29: align top-right role with tagline; remove heading rules. */
+.section-heading::after{display:none}
+@media (min-width:741px){
+  .identity .container{position:relative}
+  .identity-role{position:absolute;right:0;bottom:3px}
+  .identity-tagline{padding-right:235px}
+}
+
+/* Spacing-only update: calm mobile license edges and provide natural page ending. */
+main{padding-bottom:52px}
+@media(max-width:660px){
+  .licenses{margin-inline:7px}
+  main{padding-bottom:42px}
+}
+@media(max-width:490px){
+  .license-text-list .license{padding-inline:9px}
+}
+
+/* Editorial edition: a continuous page, with hierarchy carried by type and space. */
+:root{--bg:#faf9f6;--paper:transparent;--ink:#292d30;--muted:#646b70;--blue:#35566e;--line:#deded8}
+.identity{padding:34px 0 4px;border:0}
+.identity-name h1{color:#273c4b}.identity-name span{color:#35566e}
+.identity-role{color:#646b70}.identity-tagline{color:#35566e}
+.section{padding-top:30px}
+.section-heading{margin-bottom:14px}
+.section-heading h2{color:#304d62}
+.panel{background:transparent;border:0;border-radius:0;box-shadow:none}
+.intro-panel,.work-panel,.tool-panel{padding:0}
+.intro-panel p{line-height:1.95;margin-bottom:13px}
+.work-grid{grid-template-columns:minmax(0,1.57fr) minmax(0,.9fr);gap:46px}
+.experience-card{margin-bottom:22px}
+.experience-card h3{color:#35566e;margin-bottom:6px}
+.experience-card p{line-height:1.9}
+.group-title{color:#596773;margin-bottom:9px}
+.group-title:before{display:none}
+.tool-panel hr{display:none}
+.tool-panel hr + .group-title{margin-top:22px}
+.tool-row{margin-bottom:12px}.tool-row span{color:#646b70}
+.licenses{overflow:visible}
+.credentials-board{min-height:224px;gap:12px}
+.license-text-list .license{padding-left:0;padding-right:8px}
+.license-text-list .license:not(:last-child):after{display:none}
+.license-date,.license-info p{color:#646b70}
+.license-gallery{padding-right:3px}
+.google-card{padding:6px 0 8px;gap:19px}
+.google-copy .courses-intro,.course-name-list li{color:#414c54}
+.eyebrow,.google-copy .google-instruction{color:#69737a}
+.course-grid{margin-top:18px;gap:7px}
+main{padding-bottom:64px}
+@media(max-width:850px){
+ .work-grid{gap:30px}
+ .google-card{grid-template-columns:106px minmax(0,1fr) 154px;gap:13px}
+ .license-text-list .license{padding-left:0}
+}
+@media(max-width:740px){
+ .work-grid{grid-template-columns:1fr;gap:27px}
+ .google-card{grid-template-columns:95px minmax(0,1fr) 120px}
+}
+@media(max-width:660px){
+ .section{padding-top:28px}
+ .licenses{margin-inline:7px}
+ .license-text-list .license{padding:12px 0;gap:8px}
+ .google-card{grid-template-columns:96px minmax(0,1fr);gap:14px;padding:4px 0 8px}
+ .mobile-course-rail{margin-top:14px;padding-top:9px;scrollbar-color:#c6cbc9 transparent}
+ main{padding-bottom:48px}
+}
+@media(max-width:490px){
+ .container{width:calc(100% - 36px)}
+ .identity{padding:25px 0 3px}
+ .section-heading{margin-bottom:13px}
+ .intro-panel,.work-panel,.tool-panel{padding:0}
+ .intro-panel p{line-height:1.9;margin-bottom:13px}
+ .experience-card p{line-height:1.85}
+ .license-text-list .license{grid-template-columns:64px minmax(0,1fr) 65px;gap:6px;padding:11px 0}
+ .mobile-certificate-thumb{max-width:65px}
+ .google-card{grid-template-columns:86px minmax(0,1fr);gap:12px}
+ .main-badge-button img{width:84px}
+}
+@media(max-width:360px){
+ .container{width:calc(100% - 32px)}
+ .license-text-list .license{grid-template-columns:59px minmax(0,1fr) 54px;gap:5px}
+ .mobile-certificate-thumb{max-width:54px}
+ .google-card{grid-template-columns:72px minmax(0,1fr);gap:10px}
+ .main-badge-button img{width:72px}
+}
+
+
+
+
+/* Full-width alternating bands; all inner content stays unboxed. */
+:root{--band-light:#faf9f6;--band-shade:#f0efeb}
+body,.identity{background:var(--band-light)}
+main{padding-bottom:0}
+.section{padding:34px 0 36px}
+#about,#certifications{background:var(--band-light)}
+#skills,#google-ai{background:var(--band-shade)}
+#about{padding-top:28px}
+#google-ai{padding-bottom:64px}
+.section-heading h2{color:#293f50}
+#skills > .container::before,#certifications > .container::before{display:none;content:none}
+@media(max-width:660px){
+ .section{padding:28px 0 30px}
+ #about{padding-top:25px}
+ #google-ai{padding-bottom:48px}
+ main{padding-bottom:0}
+}
+
+
+/* Final detail revision: header band, tool hierarchy, and award month. */
+.identity{background:#e3e1db;padding:34px 0 24px}
+.tool-panel .tool-row{margin-left:12px}
+.main-badge-group{display:flex;flex-direction:column;align-items:center;min-width:0;max-width:100%}
+.google-award-date{margin:7px 0 0;color:#646b70;font-size:12px;font-weight:600;line-height:1.5;white-space:nowrap;text-align:center}
+@media(max-width:660px){
+ .main-badge-group{align-self:start;margin-top:15px}
+ .main-badge-group .main-badge-button{margin-top:0}
+ .google-award-date{font-size:11px}
+}
+@media(max-width:490px){.identity{padding:25px 0 20px}}
+@media(max-width:360px){.google-award-date{font-size:10.5px}}
+
+</style></head><body>
+<header class="identity"><div class="container"><div class="identity-row"><div class="identity-name"><h1>Tina</h1><span>講師助理</span></div><div class="identity-role">AI 實務應用　/　企業內訓支援</div></div><p class="identity-tagline">從企業實務到 AI 應用，協助更多人跨越學習門檻</p></div></header>
+<main>
+<section class="section" id="about"><div class="container"><div class="section-heading"><h2>AI 轉型課程助教｜專業經歷介紹</h2></div><div class="panel intro-panel"><p>具備十餘年企業行政管理、業務支援、採購及跨部門協作實務經驗，熟悉企業日常營運流程與工作現場的實際需求。擅長從問題與痛點出發，運用 AI 工具進行資料整合、問題分析、流程優化及工作效率提升，並將 AI 技術轉化為具體可行的實務解決方案。</p><p>近兩年積極投入 AI 教育推廣與實務應用，長期擔任線上 AI 學習社群助教，熟悉生成式 AI 工具操作、提示工程（Prompt Engineering）及 AI 協作開發。運用 Ken 老師教授的提示詞方法，成功製作互動式學習網頁與實用工具，並持續協助學員排除操作障礙、解決學習疑難，累積豐富的教學輔導與實作支援經驗，目前亦為 Ken 老師 AI 教學團隊成員。</p><p>結合企業實務經驗、AI 應用能力與教學熱忱，具備協助初學者快速掌握 AI 工具、引導課堂實作、即時排除操作問題及促進學習成果落地的能力。秉持「用 AI 學習 AI、用 AI 解決問題」的理念，致力於協助企業學員降低 AI 學習門檻，建立 AI First 思維，讓 AI 真正成為提升工作效能與推動企業轉型的實用助力。</p></div></div></section>
+<section class="section" id="skills"><div class="container"><div class="work-grid"><div class="work-column"><div class="section-heading"><h2>AI 協作與實務應用</h2></div><div class="panel work-panel"><article class="experience-card"><div aria-hidden="true" class="experience-marker"></div><div><h3>日常 AI 協作</h3><p>使用 ChatGPT、Claude、Gemini 協助資料整理、問題分析、文案撰寫與 Excel 公式處理，也透過自然語言協作製作互動式學習網頁及 AI 練習題。習慣逐步釐清需求，再經過測試、修正與驗證，讓成果符合實際用途。</p></div></article><article class="experience-card"><div aria-hidden="true" class="experience-marker"></div><div><h3>行政流程自動化</h3><p>透過 ChatGPT 協作編寫 Excel VBA，製作薪資條自動化工具，可將整理好的薪資明細一鍵輸出為個別 PDF 薪資條，減少重複製檔與手動操作，已用於日常行政作業。</p></div></article><article class="experience-card"><div aria-hidden="true" class="experience-marker"></div><div><h3>知識整合與學習輔助</h3><p>運用 NotebookLM 整合多份規範、跨部門文件與知識資料，建立以來源為基礎的查詢與整理筆記；並產出內容大綱、練習題及摘要圖卡，進一步應用於簡報與自主學習。</p></div></article></div></div><div class="tools-column"><div class="section-heading"><h2>使用工具</h2></div><aside class="panel tool-panel"><div class="group-title">日常使用</div><div class="tool-row"><strong>ChatGPT ／ Claude ／ Gemini</strong><span>工作與學習的全方位助理，使用以 ChatGPT 為主</span></div><div class="tool-row"><strong>NotebookLM</strong><span>資料整合、個人檢索資料庫</span></div><div class="tool-row"><strong>Notion</strong><span>日常任務管理與簡易專案追蹤</span></div><hr/><div class="group-title">其他實作接觸</div><div class="tool-row tight"><strong>Perplexity</strong><span>資料搜尋與查證</span></div><div class="tool-row tight"><strong>Gamma</strong><span>簡報製作</span></div><div class="tool-row tight"><strong>GitHub</strong><span>網頁發布</span></div></aside></div></div></div></section>
+<section class="section" id="certifications"><div class="container"><div class="section-heading"><h2>AI 專業認證</h2></div><div class="panel licenses"><div class="credentials-board"><div class="license-text-list"><article class="license"><div class="license-date">2026 年 07 月</div><div class="license-info"><h3>iPAS AI 應用規劃師<br class="mobile-ipas-break"/>（中級－數據分析）</h3><p>經濟部</p></div><button aria-label="放大檢視iPAS AI 應用規劃師（中級－數據分析）證照" class="certificate-thumb mobile-certificate-thumb view-image" data-label="iPAS AI 應用規劃師（中級－數據分析）" data-src="assets/cert-ipas-intermediate.jpg" title="iPAS AI 應用規劃師（中級－數據分析）" type="button"><img alt="iPAS AI 應用規劃師（中級－數據分析）證書縮圖" loading="lazy" src="assets/cert-ipas-intermediate.jpg"/></button></article><article class="license"><div class="license-date">2026 年 06 月</div><div class="license-info"><h3>iPAS AI 應用規劃師<br class="mobile-ipas-break"/>（初級）</h3><p>經濟部</p></div><button aria-label="放大檢視iPAS AI 應用規劃師（初級）證照" class="certificate-thumb mobile-certificate-thumb view-image" data-label="iPAS AI 應用規劃師（初級）" data-src="assets/cert-ipas-basic.jpg" title="iPAS AI 應用規劃師（初級）" type="button"><img alt="iPAS AI 應用規劃師（初級）證書縮圖" loading="lazy" src="assets/cert-ipas-basic.jpg"/></button></article><article class="license"><div class="license-date">2026 年 02 月</div><div class="license-info"><h3>生成式 AI 能力認證</h3><p>資策會</p></div><button aria-label="放大檢視生成式 AI 能力認證證照" class="certificate-thumb mobile-certificate-thumb view-image" data-label="生成式 AI 能力認證" data-src="assets/cert-iii.jpg" title="生成式 AI 能力認證" type="button"><img alt="生成式 AI 能力認證證書縮圖" loading="lazy" src="assets/cert-iii.jpg"/></button></article></div><div aria-label="AI 專業認證證照縮圖" class="license-gallery"><button aria-label="放大檢視iPAS AI 應用規劃師（中級－數據分析）證照" class="certificate-thumb view-image" data-label="iPAS AI 應用規劃師（中級－數據分析）" data-src="assets/cert-ipas-intermediate.jpg" title="iPAS AI 應用規劃師（中級－數據分析）" type="button"><img alt="iPAS AI 應用規劃師（中級－數據分析）證書縮圖" loading="lazy" src="assets/cert-ipas-intermediate.jpg"/></button><button aria-label="放大檢視iPAS AI 應用規劃師（初級）證照" class="certificate-thumb view-image" data-label="iPAS AI 應用規劃師（初級）" data-src="assets/cert-ipas-basic.jpg" title="iPAS AI 應用規劃師（初級）" type="button"><img alt="iPAS AI 應用規劃師（初級）證書縮圖" loading="lazy" src="assets/cert-ipas-basic.jpg"/></button><button aria-label="放大檢視生成式 AI 能力認證證照" class="certificate-thumb view-image" data-label="生成式 AI 能力認證" data-src="assets/cert-iii.jpg" title="生成式 AI 能力認證" type="button"><img alt="生成式 AI 能力認證證書縮圖" loading="lazy" src="assets/cert-iii.jpg"/></button></div></div></div></div></section>
+<section class="section google-section" id="google-ai"><div class="container"><div class="section-heading"><h2>Google AI 專業證書與數位徽章</h2></div><div class="panel google-card"><div class="main-badge-group"><a aria-label="前往 Coursera 官方認證頁面：Google AI Professional Certificate" class="main-badge-button" href="https://coursera.org/share/8e541470ea73ffbc6590f1fbcadf7fdb" target="_blank" rel="noopener noreferrer" title="開啟 Coursera 官方認證頁面"><img alt="Google AI 專業證書系列完成徽章" class="" src="assets/badge-google-professional.png"/></a><p class="google-award-date">2026 年 10 月</p></div><div class="google-copy"><div class="eyebrow">GOOGLE · COURSERA</div><h3>Google AI Professional Certificate</h3><p class="courses-intro">包含 8 門系列課程：</p><ul class="course-name-list"><li>AI Fundamentals</li><li>AI for Brainstorming and Planning</li><li>AI for Research and Insights</li><li>AI for Writing and Communicating</li><li>AI for Content Creation</li><li>AI for Data Analysis</li><li>AI for App Building</li><li>AI for App Deployment</li></ul><p class="google-instruction">徽章與證照皆可點擊查看。</p></div><button aria-label="放大檢視 Google AI Professional Certificate 系列證書" class="series-certificate-thumb certificate-thumb view-image desktop-series-cert" data-certurl="https://coursera.org/share/8e541470ea73ffbc6590f1fbcadf7fdb" data-label="Google AI Professional Certificate" data-src="assets/cert-google-professional.jpg" title="放大檢視 Google AI Professional Certificate 證書" type="button"><img alt="Google AI Professional Certificate 系列證書縮圖" loading="lazy" src="assets/cert-google-professional.jpg"/></button></div>
+<div class="course-grid course-badges"><button aria-label="檢視AI Fundamentals課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/9899964115e547fa16c8b0873ddf4f88" data-label="AI Fundamentals" data-src="assets/cert-fundamentals.jpg" title="AI Fundamentals｜點擊查看課程證書" type="button"><img alt="AI Fundamentals 數位徽章" loading="lazy" src="assets/badge-fundamentals.png"/></button><button aria-label="檢視AI for Brainstorming and Planning課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/27a08eb9c2e36636d6190702dbb9c644" data-label="AI for Brainstorming and Planning" data-src="assets/cert-brainstorming.jpg" title="AI for Brainstorming and Planning｜點擊查看課程證書" type="button"><img alt="AI for Brainstorming and Planning 數位徽章" loading="lazy" src="assets/badge-brainstorming.png"/></button><button aria-label="檢視AI for Research and Insights課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/278a4a26456f1ef622910bc00b7ce1a6" data-label="AI for Research and Insights" data-src="assets/cert-research.jpg" title="AI for Research and Insights｜點擊查看課程證書" type="button"><img alt="AI for Research and Insights 數位徽章" loading="lazy" src="assets/badge-research.png"/></button><button aria-label="檢視AI for Writing and Communicating課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/c021f50cae1617ca478f58fe1223096f" data-label="AI for Writing and Communicating" data-src="assets/cert-writing.jpg" title="AI for Writing and Communicating｜點擊查看課程證書" type="button"><img alt="AI for Writing and Communicating 數位徽章" loading="lazy" src="assets/badge-writing.png"/></button><button aria-label="檢視AI for Content Creation課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/25156ff060cf69b8b63d8fbd596954c7" data-label="AI for Content Creation" data-src="assets/cert-content.jpg" title="AI for Content Creation｜點擊查看課程證書" type="button"><img alt="AI for Content Creation 數位徽章" loading="lazy" src="assets/badge-content.png"/></button><button aria-label="檢視AI for Data Analysis課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/2a2e945e3e70615b2f3fddad962cc269" data-label="AI for Data Analysis" data-src="assets/cert-analysis.jpg" title="AI for Data Analysis｜點擊查看課程證書" type="button"><img alt="AI for Data Analysis 數位徽章" loading="lazy" src="assets/badge-analysis.png"/></button><button aria-label="檢視AI for App Building課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/dabd89fb7bd2b3a52ea5afba052a1f14" data-label="AI for App Building" data-src="assets/cert-building.jpg" title="AI for App Building｜點擊查看課程證書" type="button"><img alt="AI for App Building 數位徽章" loading="lazy" src="assets/badge-building.png"/></button><button aria-label="檢視AI for App Deployment課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/fa6c211aabf2ec9df6b1fddf0091a558" data-label="AI for App Deployment" data-src="assets/cert-deployment.jpg" title="AI for App Deployment｜點擊查看課程證書" type="button"><img alt="AI for App Deployment 數位徽章" loading="lazy" src="assets/badge-deployment.png"/></button></div><div aria-label="Google AI 系列證書及八門課程徽章，可左右滑動" class="mobile-course-rail"><button aria-label="放大檢視 Google AI Professional Certificate 系列證書" class="certificate-thumb view-image mobile-series-cert" data-certurl="https://coursera.org/share/8e541470ea73ffbc6590f1fbcadf7fdb" data-label="Google AI Professional Certificate" data-src="assets/cert-google-professional.jpg" title="Google AI Professional Certificate 系列證書" type="button"><img alt="Google AI Professional Certificate 系列證書縮圖" loading="lazy" src="assets/cert-google-professional.jpg"/></button><button aria-label="檢視AI Fundamentals課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/9899964115e547fa16c8b0873ddf4f88" data-label="AI Fundamentals" data-src="assets/cert-fundamentals.jpg" title="AI Fundamentals｜點擊查看課程證書" type="button"><img alt="AI Fundamentals 數位徽章" loading="lazy" src="assets/badge-fundamentals.png"/></button><button aria-label="檢視AI for Brainstorming and Planning課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/27a08eb9c2e36636d6190702dbb9c644" data-label="AI for Brainstorming and Planning" data-src="assets/cert-brainstorming.jpg" title="AI for Brainstorming and Planning｜點擊查看課程證書" type="button"><img alt="AI for Brainstorming and Planning 數位徽章" loading="lazy" src="assets/badge-brainstorming.png"/></button><button aria-label="檢視AI for Research and Insights課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/278a4a26456f1ef622910bc00b7ce1a6" data-label="AI for Research and Insights" data-src="assets/cert-research.jpg" title="AI for Research and Insights｜點擊查看課程證書" type="button"><img alt="AI for Research and Insights 數位徽章" loading="lazy" src="assets/badge-research.png"/></button><button aria-label="檢視AI for Writing and Communicating課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/c021f50cae1617ca478f58fe1223096f" data-label="AI for Writing and Communicating" data-src="assets/cert-writing.jpg" title="AI for Writing and Communicating｜點擊查看課程證書" type="button"><img alt="AI for Writing and Communicating 數位徽章" loading="lazy" src="assets/badge-writing.png"/></button><button aria-label="檢視AI for Content Creation課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/25156ff060cf69b8b63d8fbd596954c7" data-label="AI for Content Creation" data-src="assets/cert-content.jpg" title="AI for Content Creation｜點擊查看課程證書" type="button"><img alt="AI for Content Creation 數位徽章" loading="lazy" src="assets/badge-content.png"/></button><button aria-label="檢視AI for Data Analysis課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/2a2e945e3e70615b2f3fddad962cc269" data-label="AI for Data Analysis" data-src="assets/cert-analysis.jpg" title="AI for Data Analysis｜點擊查看課程證書" type="button"><img alt="AI for Data Analysis 數位徽章" loading="lazy" src="assets/badge-analysis.png"/></button><button aria-label="檢視AI for App Building課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/dabd89fb7bd2b3a52ea5afba052a1f14" data-label="AI for App Building" data-src="assets/cert-building.jpg" title="AI for App Building｜點擊查看課程證書" type="button"><img alt="AI for App Building 數位徽章" loading="lazy" src="assets/badge-building.png"/></button><button aria-label="檢視AI for App Deployment課程證書" class="badge-button view-image" data-certurl="https://coursera.org/share/fa6c211aabf2ec9df6b1fddf0091a558" data-label="AI for App Deployment" data-src="assets/cert-deployment.jpg" title="AI for App Deployment｜點擊查看課程證書" type="button"><img alt="AI for App Deployment 數位徽章" loading="lazy" src="assets/badge-deployment.png"/></button></div></div></section>
+</main>
+
+<div aria-hidden="true" aria-label="證書圖片預覽" aria-modal="true" class="modal" id="certificate-modal" role="dialog"><div class="modal-inner"><div class="modal-header"><span class="modal-title" id="modal-title"></span><button aria-label="關閉證書預覽" class="modal-close" id="modal-close" type="button">×</button></div><div class="modal-content"><img alt="" id="modal-image" src=""/></div><div class="modal-footer"><span class="modal-hint">公開預覽中 iPAS 證書的身分證字號、出生日期及證書編號已遮蔽。</span><a hidden="" id="modal-verify" rel="noopener noreferrer" target="_blank">Coursera 官方證書 ↗</a></div></div></div>
+<script>(()=>{const modal=document.getElementById('certificate-modal'),img=document.getElementById('modal-image'),title=document.getElementById('modal-title'),verify=document.getElementById('modal-verify'),closeBtn=document.getElementById('modal-close');let previousFocus=null;function close(){modal.classList.remove('active');modal.setAttribute('aria-hidden','true');img.removeAttribute('src');document.body.style.overflow='';previousFocus?.focus()}document.querySelectorAll('.view-image').forEach(btn=>btn.addEventListener('click',()=>{previousFocus=btn;title.textContent=btn.dataset.label||'證書預覽';img.src=btn.dataset.src;img.alt=title.textContent+' 證書圖片';if(btn.dataset.certurl){verify.hidden=false;verify.href=btn.dataset.certurl}else{verify.hidden=true;verify.removeAttribute('href')}modal.classList.add('active');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';closeBtn.focus()}));closeBtn.addEventListener('click',close);modal.addEventListener('click',e=>{if(e.target===modal)close()});document.addEventListener('keydown',e=>{if(!modal.classList.contains('active'))return;if(e.key==='Escape')close();if(e.key==='Tab'){const focusable=[closeBtn,...(verify.hidden?[]:[verify])];const idx=focusable.indexOf(document.activeElement);if(e.shiftKey&&idx<=0){e.preventDefault();focusable[focusable.length-1].focus()}else if(!e.shiftKey&&idx===focusable.length-1){e.preventDefault();focusable[0].focus()}}})})();</script></body></html>
